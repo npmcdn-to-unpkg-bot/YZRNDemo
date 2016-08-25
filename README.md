@@ -1,6 +1,7 @@
 ## YZRNDemo
 育知同创春哥RN直播课程案例
 
+<<<<<<< HEAD
 #### 1、为什么打造“YZMobileTalks团队”？
 答：赠人玫瑰，手留余香，我们希望将我们Team研究的一些技术分享给大家。
 
@@ -18,3 +19,5 @@ https://github.com/YZMobileTalks
 
 #### 6、”YZMobileTalks团队”新浪微博？
 http://weibo.com/mobiledevelopment
+=======
+>>>>>>> a44cb007cf787b7e4cadf2ec4065a1b1a215bab7
