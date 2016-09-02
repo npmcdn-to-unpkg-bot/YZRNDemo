@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS(层叠样式表)</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<style type="text/css">
+		/*Selector {property:value}*/
+		h2 {
+			font-size: 88px;
+			background-color: #CDD;
+			
+		}
+
+		#h222 {
+			color: red;
+		}
+
+		.hhh {
+
+			color: yellow;
+		}
+
+	</style>
+</head>
+<body>
+<!--内联方式 Inline Styles-->
+<h1 style="font-size:55px;color:red;background-color:#AAA">1111111</h1>
+
+<!--内部样式块对象 Embedding a Style Block-->
+<h2>22222222</h2>
+<h2 id="h222">22222222</h2>
+<h2 class="hhh">22222222</h2>
+<h2 class="hhh">22222222</h2>
+
+<!--外部样式表 Linking to a Style Sheet-->
+<!--40  green-->
+<h3 class="h333">33333333</h3>
+<h4 class="h333">444444444</h4>
+<h5 class="h333">555555555</h5>
+</body>
+</html>
