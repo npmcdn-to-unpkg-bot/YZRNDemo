@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSX</title>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+<div id="YZDemo3" style="background-color: aquamarine;width: 400px;height: 400px">
+
+</div>
+<script type="text/babel">
+    /*JSX语法中 上面的type必须为text/babel*/
+    var HelloMessage = React.createClass(
+            {
+                render: function () {
+                    return <span>www.{this.props.domainName}</span>
+                }
+            }
+    );
+
+    ReactDOM.render(
+            <HelloMessage domainName="52learn.wang" />,
+            document.getElementById("YZDemo3")
+    );
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSX</title>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+<div id="YZDemo3" style="background-color: aquamarine;width: 400px;height: 400px">
+
+</div>
+<script type="text/babel">
+    /*JSX语法中 上面的type必须为text/babel*/
+    class HelloMessage extends React.Component {
+
+        render(){
+            return (
+                    <div>
+                        <h1>{this.props.title}</h1>
+                    </div>
+            )
+        }
+    }
+
+    HelloMessage.propTypes = {
+        title: React.PropTypes.string.isRequired
+    }
+    HelloMessage.defaultProps = {
+        title: "Hello World"
+    }
+    ReactDOM.render(
+            <HelloMessage />,
+            document.getElementById("YZDemo3")
+    );
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSX</title>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+<div id="YZDemo3" style="background-color: aquamarine;width: 400px;height: 400px">
+
+</div>
+<script type="text/babel">
+    /*JSX语法中 上面的type必须为text/babel*/
+
+    var data = 1240989;
+
+    var HelloMessage = React.createClass({
+        propTypes: {
+            title: React.PropTypes.number.isRequired,
+            tel: React.PropTypes.string.isRequired
+        },
+
+        render: function () {
+            return (
+                    <div>
+                        <h1>{this.props.title}</h1>
+                        <h1>{this.props.tel}</h1>
+                    </div>
+            )
+        }
+    });
+
+    ReactDOM.render(
+            <HelloMessage title={data} tel="13331184088">
+            </HelloMessage>,
+            document.getElementById("YZDemo3")
+    );
+
+</script>
+
+</body>
+</html>

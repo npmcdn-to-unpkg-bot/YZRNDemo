@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSX</title>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+<div id="YZDemo2" style="background-color: aquamarine;width: 400px;height: 400px">
+    <!--
+    <h1>育知同创</h1>
+    <h1>匠心品质</h1>
+    <h1>良心教育</h1>
+    -->
+</div>
+<script type="text/babel">
+    /*JSX语法中 上面的type必须为text/babel*/
+    var names = [
+            <h1>育知同创</h1>,
+            <h1>匠心品质</h1>,
+            <h1>良心教育</h1>,
+            <h1>52learn.wang</h1>,
+            <h1>YZMobileTalks</h1>
+    ];
+
+    ReactDOM.render(
+            <span>
+                {
+                    names
+                }
+            </span>,
+            document.getElementById("YZDemo2")
+    );
+</script>
+</body>
+</html>
